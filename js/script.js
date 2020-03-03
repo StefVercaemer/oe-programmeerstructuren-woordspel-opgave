@@ -71,12 +71,12 @@ function CheckPalindroom() {
     const teken = woord[index];
     omgekeerdWoord += teken;
   }
-  if (omgekeerd == woord) {
+  if (omgekeerdWoord == woord) {
     feedback = `${woord} is een palindroom`;
   } else {
     feedback = `${woord} is geen palindroom`;
   }
-  feedback = (omgekeerd == woord) ? `${woord} is een palindroom`:`${woord} is geen palindroom`;
+  feedback = (omgekeerdWoord == woord) ? `${woord} is een palindroom`:`${woord} is geen palindroom`;
   divResultaat.innerHTML = feedback;
 }
 
